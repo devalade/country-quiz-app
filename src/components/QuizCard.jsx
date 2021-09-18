@@ -49,7 +49,7 @@ function QuizCard() {
             return <h4 className="sm:text-[1.35em] font-bold text-[#2F527B] mb-2">{country?.capital} is the capital of </h4>
             
         }
-        return <div className="sm:text-[1.35em] font-bold text-[#2F527B] mb-2" ><img className=" w-24 shadow-md mb-4" src={country?.flag} alt="Flag"/>  Which country does flag belngs to ? </div>
+        return <div className="sm:text-[1.35em] font-bold text-[#2F527B] mb-2" ><img className=" w-24 shadow-md mb-4" src={country?.flag} alt="Flag"/>  Which country does this flag belongs to ? </div>
     }
 
     const getQuestion = () => {
