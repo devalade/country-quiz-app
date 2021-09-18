@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, { createContext, useState } from 'react';
+import QuizCard from "./components/QuizCard";
+
+export const PointContext = createContext(0);
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [point, setPoint] = useState(0);
+  // console.log(point);
   return (
-    <div className="App">
-     Welcome to my quiz app
-    </div>
-  )
+    <PointContext.Provider value={[point, setPoint]}>
+      <QuizCard />
+    </PointContext.Provider>
+  );
 }
 
-export default App
+export default App;
